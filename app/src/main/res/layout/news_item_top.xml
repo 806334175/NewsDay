@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:gravity="center">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/new_item_top_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.example.nowingo.newsday.view.MarqueeText
+            android:id="@+id/new_item_top_tv"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:background="@drawable/bg_for_newtop_tv"
+            android:layout_alignBottom="@id/new_item_top_iv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"/>
+    </RelativeLayout>
+</LinearLayout>
